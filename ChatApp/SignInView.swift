@@ -11,9 +11,9 @@ struct SignInView: View {
     @Binding var showSignIn: Bool
     var body: some View {
         VStack {
-            Image("me")
+            Image("images")
                 .resizable()
-                .aspectRatio(contentMode: .fill)
+                .aspectRatio(contentMode: .fit)
                 .frame(maxWidth: 400, maxHeight: 450, alignment: .top)
             Spacer()
             VStack(spacing: 10) {

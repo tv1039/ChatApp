@@ -24,7 +24,6 @@
 		35F946602BE9F0BB00EA43D4 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F9465F2BE9F0BB00EA43D4 /* AuthManager.swift */; };
 		35F946632BE9F64600EA43D4 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 35F946622BE9F64600EA43D4 /* GoogleSignIn */; };
 		35F946652BE9F64600EA43D4 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 35F946642BE9F64600EA43D4 /* GoogleSignInSwift */; };
-		35F946672BE9F6D300EA43D4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 35F946662BE9F6D300EA43D4 /* GoogleService-Info.plist */; };
 		35F9466B2BEA16B000EA43D4 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 35F9466A2BEA16B000EA43D4 /* SDWebImageSwiftUI */; };
 /* End PBXBuildFile section */
 
@@ -41,7 +40,6 @@
 		35F9464F2BE9E69B00EA43D4 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		35F9465C2BE9F0A000EA43D4 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		35F9465F2BE9F0BB00EA43D4 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
-		35F946662BE9F6D300EA43D4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		35F946682BE9F6E800EA43D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,7 +88,6 @@
 			isa = PBXGroup;
 			children = (
 				35F946682BE9F6E800EA43D4 /* Info.plist */,
-				35F946662BE9F6D300EA43D4 /* GoogleService-Info.plist */,
 				35F946372BE9DCA900EA43D4 /* ChatAppApp.swift */,
 				35F9465E2BE9F0A800EA43D4 /* Managers */,
 				35F9464B2BE9E01000EA43D4 /* Models */,
@@ -213,7 +210,6 @@
 			files = (
 				35F9463F2BE9DCAA00EA43D4 /* Preview Assets.xcassets in Resources */,
 				35F9463C2BE9DCAA00EA43D4 /* Assets.xcassets in Resources */,
-				35F946672BE9F6D300EA43D4 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
