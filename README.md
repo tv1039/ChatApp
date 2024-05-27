@@ -7,9 +7,9 @@ Firebase를 활용한 채팅앱을 SwiftUI로 구현하고 테스팅하는 것�
 파일 저장소입니다. </br>
 
 ## Technologies Used
-- **Programming Languag**: Swift
-- **Framework**: SwiftUI
-- **Backend Services**: Firebase
+- **Programming Languag**: </br> Swift
+- **Framework**: </br> SwiftUI
+- **Backend Services**: </br> Firebase
   - **Auth**: 사용자 인증
   - **Firestore**: 실시간 데이터베이스
   - **Storage**: 파일 저장소
