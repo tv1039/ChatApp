@@ -1,0 +1,8 @@
+# Firebase 설정 파일
+GoogleService-Info.plist
+
+# 설정 파일
+*.xcconfig
+
+# 앱 설정 파일
+info.plist
