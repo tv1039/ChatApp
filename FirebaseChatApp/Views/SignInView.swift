@@ -8,9 +8,14 @@ import FirebaseAuth
 
 struct SignInView: View {
     @EnvironmentObject var fm: FirebaseManager
+    @EnvironmentObject var km: KakaoManager
     @State private var userEmail = ""
     @State private var userPassword = ""
     @State private var showingCreateAccountSheet = false
+    
+    let loginStatusInfo: (Bool) -> String = { isLoggedIn in
+        return isLoggedIn ? "로그인 상태" : "로그아웃 상태"
+    }
     
     var body: some View {
         VStack {
@@ -71,9 +76,21 @@ struct SignInView: View {
                 .foregroundStyle(.primary)
                 
                 Button {
-                    print("Apple Login")
+                    km.handleKakoLogin()
+                    print("Success: load to kakao SignView")
                 } label: {
-                    Text("Sign in with Apple")
+                    Image("kakao_login_large_wide")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                }
+                .frame(width: 300)
+                .foregroundStyle(.primary)
+                
+                Button {
+                    km.kakaoLogout()
+                    print("Success: load to kakao SignView")
+                } label: {
+                    Text("카카오톡 로그아웃")
                         .padding()
                         .overlay {
                             RoundedRectangle(cornerRadius: 20)
@@ -100,6 +117,8 @@ struct SignInView: View {
                     }
                     .frame(width: 300)
                     .foregroundStyle(.primary)
+                
+                Text("카카오 \(loginStatusInfo(km.isLoggedIn))")
             }
         }
         .padding()
@@ -109,4 +128,5 @@ struct SignInView: View {
 #Preview {
     SignInView()
         .environmentObject(FirebaseManager.shared)
+        .environmentObject(KakaoManager())
 }

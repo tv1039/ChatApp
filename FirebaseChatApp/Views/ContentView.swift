@@ -23,6 +23,7 @@ enum NavigationPath: String {
 
 struct ContentView: View {
     @EnvironmentObject var fm: FirebaseManager
+    @EnvironmentObject var km: KakaoManager
     @State private var navigationPath: NavigationPath = .chat
     
     var body: some View {
@@ -52,4 +53,5 @@ struct ContentView: View {
 #Preview {
     ContentView()
         .environmentObject(FirebaseManager.shared)
+        .environmentObject(KakaoManager())
 }
