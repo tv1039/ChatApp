@@ -7,4 +7,5 @@ GoogleService-Info.plist
 # 앱 설정 파일
 info.plist
 
+# Mac 시스템 파일
 .DS_Store
