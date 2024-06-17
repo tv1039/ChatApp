@@ -1,0 +1,11 @@
+//
+//  Config.xcconfig
+//  FirebaseChatApp
+//
+//  Created by 홍승표 on 6/17/24.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+KAKAO_NATIVE_APP_KEY = 10f6b3b1243a911a1cb26c89e22247ca
