@@ -6,3 +6,5 @@ GoogleService-Info.plist
 
 # 앱 설정 파일
 info.plist
+
+.DS_Store
